@@ -1,0 +1,122 @@
+:root {
+    --cyber-bg: #0b0f19;
+    --cyber-panel: #111827;
+    --neon-cyan: #00f0ff;
+    --neon-magenta: #ff007f;
+    --neon-orange: #ff9900;
+    --neon-green: #39ff14;
+    --cyber-text: #c3c9d6;
+}
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: var(--cyber-bg) !important;
+    color: var(--cyber-text);
+    background-image: 
+        linear-gradient(rgba(0, 240, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 240, 255, 0.02) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+/* Navbar Estilo Terminal */
+.navbar-cyber {
+    background-color: #111827 !important;
+    border-bottom: 2px solid var(--neon-cyan);
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
+}
+.navbar-brand {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 0 0 8px var(--neon-cyan);
+}
+
+/* Paneles de Estadísticas Cyber */
+.card-cyber-mini {
+    background: var(--cyber-panel) !important;
+    border: 1px solid rgba(0, 240, 255, 0.2) !important;
+    border-left: 4px solid var(--neon-cyan) !important;
+    border-radius: 6px;
+    box-shadow: inset 0 0 10px rgba(0, 240, 255, 0.05);
+    transition: all 0.3s ease;
+}
+.card-cyber-mini:hover {
+    border-color: var(--neon-cyan) !important;
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.2), inset 0 0 10px rgba(0, 240, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Panel Principal de la Tabla */
+.main-cyber-panel {
+    background: #111827 !important;
+    border: 1px solid rgba(0, 240, 255, 0.2) !important;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+}
+.panel-title {
+    font-family: 'Orbitron', sans-serif;
+    color: #fff !important;
+    text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+}
+
+/* Fuerza el fondo oscuro en la tabla y filas eliminando el bug blanco */
+.table-cyber {
+    background-color: transparent !important;
+    color: var(--cyber-text) !important;
+}
+.table-cyber th, .table-cyber td {
+    background-color: transparent !important;
+    color: var(--cyber-text) !important;
+    border-bottom: 1px solid rgba(0, 240, 255, 0.15) !important;
+    padding: 14px 12px !important;
+}
+.table-cyber thead th {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.8rem;
+    color: var(--neon-cyan) !important;
+    border-bottom: 2px solid var(--neon-cyan) !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.table-cyber tbody tr:hover td {
+    background-color: rgba(0, 240, 255, 0.07) !important;
+}
+
+/* Botón Neón Naranja (Agregar) */
+.btn-neon-orange {
+    font-family: 'Orbitron', sans-serif;
+    background: transparent !important;
+    color: var(--neon-orange) !important;
+    border: 2px solid var(--neon-orange) !important;
+    border-radius: 6px;
+    font-weight: 600;
+    text-transform: uppercase;
+    box-shadow: 0 0 10px rgba(255, 153, 0, 0.2);
+    transition: all 0.3s;
+}
+.btn-neon-orange:hover {
+    background: var(--neon-orange) !important;
+    color: #000 !important;
+    box-shadow: 0 0 20px var(--neon-orange);
+}
+
+/* Inputs de la Modal */
+.cyber-input {
+    background-color: #0b0f19 !important;
+    border: 1px solid rgba(0, 240, 255, 0.3) !important;
+    color: #fff !important;
+}
+.cyber-input:focus {
+    border-color: var(--neon-magenta) !important;
+    box-shadow: 0 0 10px rgba(255, 0, 127, 0.4) !important;
+}
+
+.cyber-modal .modal-content {
+    background-color: var(--cyber-panel) !important;
+    border: 2px solid var(--neon-magenta) !important;
+    box-shadow: 0 0 30px rgba(255, 0, 127, 0.3);
+    border-radius: 8px;
+}
+.cyber-modal-header {
+    border-bottom: 1px solid rgba(255, 0, 127, 0.3) !important;
+    font-family: 'Orbitron', sans-serif;
+}
