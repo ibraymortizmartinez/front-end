@@ -59,8 +59,10 @@ frontend-contactos/
 │   ├── css/
 │   │   └── Style.css            # Archivo centralizador de estilos neón y fuentes monoespaciadas
 │   ├── img/
-│   │   └── grandes-datos.png    # Iconografía y Favicon personalizado de la aplicación
+│   │   ├── grandes-datos.png    
+│   |   └── servidor.png         # Iconografía y Favicon personalizado de la aplicación
 │   └── js/
 │       ├── API.js               # Módulo de consumo asíncrono de endpoints remotos
 │       ├── UI.js                # Controlador dinámico del DOM y renderizado de celdas
 │       └── app.js               # Enlace de eventos e inicializador del ecosistema
+└── index.html                   # Pagina principal
